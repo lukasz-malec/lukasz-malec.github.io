@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>Sauron</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style2.css">
+<link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+<body style: >
+    <div id = "main">
+
+        <!-- Sidebar -->
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">Zamknij &times;</button>
+            <a href="index.html" class="w3-bar-item w3-button">Strona glowna </a>
+            <a href="sam.html" class="w3-bar-item w3-button">Samwise Gamgee </a>
+            <a href="gandalf.html" class="w3-bar-item w3-button">Gandalf</a>
+            <a href="aragorn.html" class="w3-bar-item w3-button">Aragorn</a>
+        </div>
+
+        <!-- Page Content -->
+        <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+            <div class="w3-container">
+                
+            </div>
+        </div>
+
+        <div id="main-content">
+            <section id="intro">
+                <h1>Sauron</h1>
+                <img src="pictures/sauron.jpg" class="float-img">
+                <p>Sauron – to jeden z najpotężniejszych antagonistów w literaturze fantasy, stworzony przez J.R.R. Tolkiena w legendarium Śródziemia. Jest centralną postacią zła w trylogii Władca Pierścieni, a także w Silmarillionie, gdzie przedstawiono jego pochodzenie i wcześniejsze losy.
+
+                    Sauron był pierwotnie jednym z Majarów – potężnych duchów służących Valarom, bogom Śródziemia. W początkach swego istnienia nazywał się Mairon, co oznacza „podziwiany” lub „wspaniały”, i słynął z wielkiego talentu do rzemiosła oraz miłości do porządku i harmonii. Został jednak uwiedziony przez Morgotha (Melkora), pierwszego Władcę Ciemności, i stał się jego najwierniejszym sługą.
+                    
+                    Po upadku Morgotha Sauron przyjął rolę jego następcy i stopniowo umacniał swoją potęgę, aż stał się jednym z najgroźniejszych wrogów wolnych ludów Śródziemia. Jego największym osiągnięciem było wykucie Jedynego Pierścienia, który miał mu zapewnić kontrolę nad innymi Pierścieniami Władzy i ich nosicielami. Pierścień stał się symbolem jego mocy i zła, a także kluczem do panowania nad całym światem.
+                    
+                    Sauron był mistrzem manipulacji, oszustwa i korupcji. W II Erze przyjął zwodniczą formę Annatara, „Władcy Darów”, by zjednać sobie elfów i pomóc im w tworzeniu Pierścieni Władzy. Jednak jego prawdziwa natura była przerażająca: Sauron jako ciemna, niecielesna istota objawiał się w formie oka bez powiek, płonącego ogniem nienawiści. Jego symbolami były także Czarne Wieże i złowrogie istoty, takie jak orkowie, trolle czy Nazgûle – Upiorni Jeźdźcy.</p>
+            </section>
+
+        </div>
+        <footer>
+            <p>© 1954 J.R.R Tolkien</p>
+        </footer>
+</div>
+
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
+</body>
+</html> 

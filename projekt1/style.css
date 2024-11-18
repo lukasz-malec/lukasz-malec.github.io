@@ -1,0 +1,160 @@
+body{
+    background-image: url('background.png');
+    background-repeat: no-repeat;         
+    background-size: cover;                
+    background-position: center;   
+    font-family:'Uncial Antiqua', serif;
+    color:#000;
+}
+
+header, footer {
+    background-color: #2f4f4f;
+    text-align: center;
+    padding: 14px 0;
+    border: 4px solid black;
+    color:white;
+}
+
+#main {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid black;
+}
+
+
+#naglowek, #intro, #goal, #historia{
+    background-color: #f5deb3;
+    padding: 20px;
+    text-align: left;
+    border: 4px solid black;
+}
+
+
+#team {
+    background-color: #f5deb3; 
+    padding: 20px;
+    border: 4px solid black;
+}
+
+
+#team a {
+    text-decoration: none;       /* Usuwamy podkreślenie linków */
+    color: 2c3e50;                
+    font-size: 18px;           
+  }
+
+
+#menu {
+    display: flex;               /* Używamy flexboxa, aby ułożyć elementy w wierszu */
+    list-style: none;            /* Usuwamy domyślną kropkę przy elementach listy */
+    padding: 0;                  /* Usuwamy marginesy wewnętrzne */
+    margin: 0;                   /* Usuwamy domyślny margines dla ul */
+    justify-content: center;     /* Wyrównanie menu do środka */
+    background-color:#f5deb3;
+    border: 4px solid black;
+}
+
+#menu li {
+    margin: 0 20px;              /* Odstęp między elementami menu */
+}
+
+#menu a {
+    text-decoration: none;       
+    color: black;                
+    font-size: 18px;            
+}
+
+#menu a:hover {
+    text-decoration: underline;  /* Podkreślenie linków po najechaniu */
+}
+
+
+
+#team {
+    text-align: center;
+    padding: 20px;
+}
+
+#team h1 {
+    font-family: 'Uncial Antiqua', serif; 
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trzy kolumny o równej szerokości */
+    gap: 20px; /* Odstępy między elementami */
+    justify-items: center; /* Wyrównanie elementów w środku */
+}
+
+.member {
+    text-align: center;
+    text-decoration: underline;
+    max-width: 150px; /* Ustaw maksymalną szerokość dla każdego elementu */
+}
+
+.member img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px; /* Zaokrąglenie rogów obrazków */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lekki cień pod obrazkami */
+}
+
+.member p {
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #34495e;
+}
+
+
+.float-img {
+    float: left; /* Obrazek ustawiony po lewej stronie */
+    margin-right: 15px; /* Odstęp po prawej stronie obrazka */
+    margin-bottom: 10px; /* Odstęp poniżej obrazka */
+    height: 250px; 
+    width: auto; /* Zachowaj proporcje */
+    border-radius: 10px; /* Zaokrąglenie rogów obrazków */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lekki cień pod obrazkami */
+}
+  
+
+.float-img-right {
+    float: right; 
+    margin-right: 15px; 
+    margin-bottom: 10px; 
+    height: 150px; 
+    width: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.float-img-podstrona{
+    width: 100%;
+    height: 100px;
+    float: left;
+    margin-right: 15px; 
+    margin-bottom: 10px; 
+    height: 250px; 
+    width: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+
+
+/* Media queries dla resposwyności */
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dwie kolumny */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* Jedna kolumna*/
+    }
+}
